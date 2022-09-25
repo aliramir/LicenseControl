@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Win.Design" Version="22.1.*-*" />
+    <PackageReference Include="DeviceId" Version="6.2.0" />
+    <PackageReference Include="DeviceId.Windows" Version="6.2.0" />
+    <PackageReference Include="DeviceId.Windows.Wmi" Version="6.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.17" />
+  </ItemGroup>
+
+</Project>
