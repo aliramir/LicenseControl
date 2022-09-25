@@ -33,23 +33,22 @@
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.HomeBtn = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.aboutMeBtn = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.CreateLicense = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ProduceListBtn = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.AddProduceBtn = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
-            this.skinBarSubItem1 = new DevExpress.XtraBars.SkinBarSubItem();
-            this.skinPaletteDropDownButtonItem1 = new DevExpress.XtraBars.SkinPaletteDropDownButtonItem();
-            this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement8 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.aboutMeBtn = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
+            this.skinBarSubItem1 = new DevExpress.XtraBars.SkinBarSubItem();
+            this.skinPaletteDropDownButtonItem1 = new DevExpress.XtraBars.SkinPaletteDropDownButtonItem();
+            this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
@@ -58,9 +57,9 @@
             // fluentDesignFormContainer1
             // 
             this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(200, 33);
+            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(200, 31);
             this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(598, 516);
+            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(584, 511);
             this.fluentDesignFormContainer1.TabIndex = 0;
             // 
             // accordionControl1
@@ -73,10 +72,10 @@
             this.accordionControlElement1,
             this.accordionControlElement3,
             this.accordionControlElement6});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 33);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 31);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Auto;
-            this.accordionControl1.Size = new System.Drawing.Size(200, 516);
+            this.accordionControl1.Size = new System.Drawing.Size(200, 511);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -86,6 +85,13 @@
             this.HomeBtn.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.HomeBtn.Text = "Quickstart";
             this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
+            // 
+            // aboutMeBtn
+            // 
+            this.aboutMeBtn.Name = "aboutMeBtn";
+            this.aboutMeBtn.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.aboutMeBtn.Text = "About Me";
+            this.aboutMeBtn.Click += new System.EventHandler(this.aboutMeBtn_Click);
             // 
             // accordionControlElement2
             // 
@@ -122,50 +128,6 @@
             this.AddProduceBtn.Name = "AddProduceBtn";
             this.AddProduceBtn.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.AddProduceBtn.Text = "Add Produce";
-            // 
-            // fluentDesignFormControl1
-            // 
-            this.fluentDesignFormControl1.FluentDesignForm = this;
-            this.fluentDesignFormControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.skinBarSubItem1,
-            this.skinPaletteDropDownButtonItem1});
-            this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
-            this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
-            this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(798, 33);
-            this.fluentDesignFormControl1.TabIndex = 2;
-            this.fluentDesignFormControl1.TabStop = false;
-            this.fluentDesignFormControl1.TitleItemLinks.Add(this.skinBarSubItem1);
-            this.fluentDesignFormControl1.TitleItemLinks.Add(this.skinPaletteDropDownButtonItem1);
-            // 
-            // skinBarSubItem1
-            // 
-            this.skinBarSubItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.skinBarSubItem1.Caption = "Skin";
-            this.skinBarSubItem1.Id = 0;
-            this.skinBarSubItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("skinBarSubItem1.ImageOptions.SvgImage")));
-            this.skinBarSubItem1.Name = "skinBarSubItem1";
-            this.skinBarSubItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
-            // 
-            // skinPaletteDropDownButtonItem1
-            // 
-            this.skinPaletteDropDownButtonItem1.ActAsDropDown = true;
-            this.skinPaletteDropDownButtonItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.skinPaletteDropDownButtonItem1.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
-            this.skinPaletteDropDownButtonItem1.Id = 1;
-            this.skinPaletteDropDownButtonItem1.Name = "skinPaletteDropDownButtonItem1";
-            // 
-            // fluentFormDefaultManager1
-            // 
-            this.fluentFormDefaultManager1.Form = this;
-            this.fluentFormDefaultManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.skinBarSubItem1,
-            this.skinPaletteDropDownButtonItem1});
-            this.fluentFormDefaultManager1.MaxItemId = 2;
-            // 
-            // defaultLookAndFeel1
-            // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "WXI";
             // 
             // accordionControlElement3
             // 
@@ -207,18 +169,51 @@
             this.accordionControlElement8.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement8.Text = "Customers List";
             // 
-            // aboutMeBtn
+            // fluentDesignFormControl1
             // 
-            this.aboutMeBtn.Name = "aboutMeBtn";
-            this.aboutMeBtn.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.aboutMeBtn.Text = "About Me";
-            this.aboutMeBtn.Click += new System.EventHandler(this.aboutMeBtn_Click);
+            this.fluentDesignFormControl1.FluentDesignForm = this;
+            this.fluentDesignFormControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.skinBarSubItem1,
+            this.skinPaletteDropDownButtonItem1});
+            this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
+            this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
+            this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(784, 31);
+            this.fluentDesignFormControl1.TabIndex = 2;
+            this.fluentDesignFormControl1.TabStop = false;
+            this.fluentDesignFormControl1.TitleItemLinks.Add(this.skinBarSubItem1);
+            this.fluentDesignFormControl1.TitleItemLinks.Add(this.skinPaletteDropDownButtonItem1);
+            // 
+            // skinBarSubItem1
+            // 
+            this.skinBarSubItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.skinBarSubItem1.Caption = "Skin";
+            this.skinBarSubItem1.Id = 0;
+            this.skinBarSubItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("skinBarSubItem1.ImageOptions.SvgImage")));
+            this.skinBarSubItem1.Name = "skinBarSubItem1";
+            this.skinBarSubItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionInMenu;
+            // 
+            // skinPaletteDropDownButtonItem1
+            // 
+            this.skinPaletteDropDownButtonItem1.ActAsDropDown = true;
+            this.skinPaletteDropDownButtonItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.skinPaletteDropDownButtonItem1.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            this.skinPaletteDropDownButtonItem1.Id = 1;
+            this.skinPaletteDropDownButtonItem1.Name = "skinPaletteDropDownButtonItem1";
+            // 
+            // fluentFormDefaultManager1
+            // 
+            this.fluentFormDefaultManager1.Form = this;
+            this.fluentFormDefaultManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.skinBarSubItem1,
+            this.skinPaletteDropDownButtonItem1});
+            this.fluentFormDefaultManager1.MaxItemId = 2;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(798, 549);
+            this.ClientSize = new System.Drawing.Size(784, 542);
             this.ControlContainer = this.fluentDesignFormContainer1;
             this.Controls.Add(this.fluentDesignFormContainer1);
             this.Controls.Add(this.accordionControl1);
@@ -251,7 +246,6 @@
         private DevExpress.XtraBars.SkinPaletteDropDownButtonItem skinPaletteDropDownButtonItem1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
         private DevExpress.XtraBars.Navigation.AccordionControlElement CreateLicense;
-        private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement aboutMeBtn;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;

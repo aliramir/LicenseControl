@@ -13,7 +13,7 @@ namespace LicenseControl.Views.UserControls
         public CreateLicense()
         {
             InitializeComponent();
-            LicLabel.Text = "";
+            LicLabel.Text = @"  ";
             FillMethods();
         }
 

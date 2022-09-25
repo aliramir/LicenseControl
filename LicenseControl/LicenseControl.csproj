@@ -4,7 +4,23 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>license (1).ico</ApplicationIcon>
+    <Copyright>2023</Copyright>
+    <PackageProjectUrl>https://aliram.ir</PackageProjectUrl>
+    <PackageIcon>license (1).ico</PackageIcon>
+    <RepositoryUrl>https://github.com/aliramir/LicenseControl</RepositoryUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="license (1).ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\arame\Downloads\license (1).ico">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="DevExpress.Win.Design" Version="22.1.*-*" />
@@ -12,6 +28,21 @@
     <PackageReference Include="DeviceId.Windows" Version="6.2.0" />
     <PackageReference Include="DeviceId.Windows.Wmi" Version="6.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.17" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>
